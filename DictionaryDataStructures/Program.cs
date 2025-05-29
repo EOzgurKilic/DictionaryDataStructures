@@ -4,7 +4,54 @@ class Program
 {
     static void Main(string[] args)
     {
-        Dictionary<int, int> dictionary = new Dictionary<int, int>();
+        //IsAnagram
+        /*string str1 = "car";
+        string str2 = "rat";
+        Console.WriteLine(IsAnagram(str1, str2));*/
+
+
+        //TwoSum
+        int[] arr = new int[3] { 3, 3, 3 };
+        var pair = TwoSum(arr, 6);
+        Console.WriteLine(pair[0] + " " +pair[1]);
+    }
+    public static bool IsAnagram(string s, string t) //https://leetcode.com/problems/valid-anagram/
+    {
+        if (s.Length != t.Length)
+            return false;
+        
+        Dictionary<char, int> dict = new Dictionary<char, int>();
+        foreach (var str in s)
+        {
+            if (!dict.ContainsKey(str))
+                dict.Add(str, 1);
+            else
+                dict[str]++;
+        }
+
+        foreach (var str in t)
+        {
+            if (!dict.ContainsKey(str))
+                return false;
+            else if (--dict[str] < 0)
+                return false;
+        }
+
+        return true;
+    }
+    public static int[] TwoSum(int[] nums, int target) //https://leetcode.com/problems/two-sum/
+    {
+        Dictionary<int, int> dict = new Dictionary<int, int>();
+        dict.Add(nums[0], 0);
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (dict.ContainsKey(target - nums[i]))
+            {
+                return new int[2] {dict[target - nums[i]],i};
+            }
+            dict[nums[i]] = i;
+        }
+        return new int[0];
     }
 }
 
