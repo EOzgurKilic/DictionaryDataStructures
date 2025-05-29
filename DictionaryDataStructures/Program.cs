@@ -1,4 +1,6 @@
-﻿namespace DictionaryDataStructures;
+﻿using System.Text;
+
+namespace DictionaryDataStructures;
 
 class Program
 {
@@ -11,9 +13,15 @@ class Program
 
 
         //TwoSum
-        int[] arr = new int[3] { 3, 3, 3 };
+        /*int[] arr = new int[3] { 3, 3, 3 };
         var pair = TwoSum(arr, 6);
-        Console.WriteLine(pair[0] + " " +pair[1]);
+        Console.WriteLine(pair[0] + " " +pair[1]);*/
+        
+        
+        //LongestCommonPrefix
+        string[] strs = {"abc", "abcd", "abcde", "abcdef"};
+        string pref = LongestCommonPrefix(strs);
+
     }
     public static bool IsAnagram(string s, string t) //https://leetcode.com/problems/valid-anagram/
     {
@@ -52,6 +60,34 @@ class Program
             dict[nums[i]] = i;
         }
         return new int[0];
+    }
+    
+    public static string LongestCommonPrefix(string[] strs) //https://leetcode.com/problems/longest-common-prefix/
+    {
+        int shortestIndex = 200, counter = 0;
+        StringBuilder sb = new StringBuilder();
+        sb.Append("");
+        for (int i = 1 ; i < strs.Length; i++)
+        {
+            shortestIndex = shortestIndex > strs[i].Length ? strs[i].Length : shortestIndex;
+        }
+
+        for (int i = 0; i < strs.Length; i++)
+        {
+            for (int j = 0; j < strs[shortestIndex].Length; j++)
+            {
+                if (strs[shortestIndex][j]==strs[i][j])
+                {
+                    sb.Append(strs[shortestIndex][j]);
+                }
+                else
+                {
+                    return sb.ToString();
+                }
+            }
+        }
+
+        return "";
     }
 }
 

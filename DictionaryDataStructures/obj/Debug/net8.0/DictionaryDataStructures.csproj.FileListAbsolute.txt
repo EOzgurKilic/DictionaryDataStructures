@@ -1,0 +1,15 @@
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/bin/Debug/net8.0/DictionaryDataStructures
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/bin/Debug/net8.0/DictionaryDataStructures.deps.json
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/bin/Debug/net8.0/DictionaryDataStructures.runtimeconfig.json
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/bin/Debug/net8.0/DictionaryDataStructures.dll
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/bin/Debug/net8.0/DictionaryDataStructures.pdb
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.GeneratedMSBuildEditorConfig.editorconfig
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.AssemblyInfoInputs.cache
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.AssemblyInfo.cs
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.csproj.CoreCompileInputs.cache
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.sourcelink.json
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.dll
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/refint/DictionaryDataStructures.dll
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.pdb
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/DictionaryDataStructures.genruntimeconfig.cache
+/Users/orkhanrahimli/RiderProjects/DictionaryDataStructures/DictionaryDataStructures/obj/Debug/net8.0/ref/DictionaryDataStructures.dll
