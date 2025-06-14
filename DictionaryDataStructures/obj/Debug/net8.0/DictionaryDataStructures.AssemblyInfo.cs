@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DictionaryDataStructures")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed59e27aa503893f1f4fabe7e4f0cdeca30b2dfa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e819c4cb59e840a4065244e55666e86536aef01")]
 [assembly: System.Reflection.AssemblyProductAttribute("DictionaryDataStructures")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DictionaryDataStructures")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

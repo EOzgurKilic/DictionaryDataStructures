@@ -80,31 +80,6 @@ class Program
         }
         return new int[0];
     }
-    
-    public static string LongestCommonPrefix(string[] strs) //https://leetcode.com/problems/longest-common-prefix/
-    {
-        int shortestIndex = 200, temp = 0;
-        StringBuilder sb = new StringBuilder();
-        sb.Append("");
-        for (int i = 1 ; i < strs.Length; i++)
-        {
-            shortestIndex = shortestIndex > strs[i].Length ? strs[i].Length : shortestIndex;
-        }
-
-        for (int i = 0; i < strs.Length; i++)
-        {
-            while (temp < strs[shortestIndex].Length)
-            {
-                if (strs[shortestIndex][temp]!=strs[i][temp])
-                {
-                    return sb.ToString();
-                }
-            }
-            sb.Append(strs[shortestIndex][temp]);
-        }
-
-        return "";
-    }
 }
 
 class MyDictionary<Tkey, Tvalue>
