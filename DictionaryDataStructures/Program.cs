@@ -19,9 +19,28 @@ class Program
         
         
         //LongestCommonPrefix
-        string[] strs = {"abc", "abcd", "abcde", "abcdef"};
-        string pref = LongestCommonPrefix(strs);
+        /*string[] strs = {"abc", "abcd", "abcde", "abcdef"};
+        string pref = LongestCommonPrefix(strs);*/
+        
+        
+        LinkedList<int> list1 = new LinkedList<int>();
+        list1.AddFirst(4);
+        list1.AddFirst(3);
+        list1.AddFirst(2);
+        list1.AddFirst(1);
+        
+        LinkedList<int> list2 = new LinkedList<int>();
+        LinkedListNode<int> node1 = list1.First;
 
+        while (node1 != null)
+        {
+            list2.AddFirst(node1.Value);
+            node1 = node1.Next;
+        }
+
+        foreach (var VARIABLE in list2)
+            Console.WriteLine(VARIABLE);
+        
     }
     public static bool IsAnagram(string s, string t) //https://leetcode.com/problems/valid-anagram/
     {
@@ -64,7 +83,7 @@ class Program
     
     public static string LongestCommonPrefix(string[] strs) //https://leetcode.com/problems/longest-common-prefix/
     {
-        int shortestIndex = 200, counter = 0;
+        int shortestIndex = 200, temp = 0;
         StringBuilder sb = new StringBuilder();
         sb.Append("");
         for (int i = 1 ; i < strs.Length; i++)
@@ -74,17 +93,14 @@ class Program
 
         for (int i = 0; i < strs.Length; i++)
         {
-            for (int j = 0; j < strs[shortestIndex].Length; j++)
+            while (temp < strs[shortestIndex].Length)
             {
-                if (strs[shortestIndex][j]==strs[i][j])
-                {
-                    sb.Append(strs[shortestIndex][j]);
-                }
-                else
+                if (strs[shortestIndex][temp]!=strs[i][temp])
                 {
                     return sb.ToString();
                 }
             }
+            sb.Append(strs[shortestIndex][temp]);
         }
 
         return "";
@@ -155,4 +171,3 @@ class MyDictionary<Tkey, Tvalue>
     }
     
 }
-
