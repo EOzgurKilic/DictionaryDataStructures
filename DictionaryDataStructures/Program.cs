@@ -65,8 +65,7 @@ class Program
         _bucket = new int[2*_bucket.Length];
         _temp.CopyTo(_bucket,0);
         Console.WriteLine(2*_bucket.Length);
-
-
+        
     }
     public static bool IsAnagram(string s, string t) //https://leetcode.com/problems/valid-anagram/
     {
@@ -88,17 +87,23 @@ class Program
     }
     public static int[] TwoSum(int[] nums, int target) //https://leetcode.com/problems/two-sum/
     {
-        Dictionary<int, int> dict = new Dictionary<int, int>();
-        dict.Add(nums[0], 0);
-        for (int i = 1; i < nums.Length; i++)
+        Dictionary<int,int> dict = new();
+        for (int i = 0; i < nums.Length; i++)
         {
-            if (dict.ContainsKey(target - nums[i]))
-            {
-                return new int[2] {dict[target - nums[i]],i};
-            }
+            if(dict.ContainsKey(target-nums[i]))
+                return new int[2]{i, dict[target-nums[i]]};
+
             dict[nums[i]] = i;
         }
         return new int[0];
+    }
+    public static bool ContainsDuplicate(int[] nums) //https://leetcode.com/problems/contains-duplicate/description/
+    {
+        HashSet<int> set = new();
+        foreach(var i in nums)
+            if (!(set.Add(i)))
+                return true;
+        return false;
     }
 }
 
@@ -203,6 +208,34 @@ public class MyHashMap //https://leetcode.com/problems/design-hashmap/
         _temp.CopyTo(_bucket,0);
     }
 }
+
+public class MyHashSet //https://leetcode.com/problems/design-hashset/
+{
+
+    public MyHashSet() {
+        
+    }
+    
+    public void Add(int key) {
+        
+    }
+    
+    public void Remove(int key) {
+        
+    }
+    
+    public bool Contains(int key) {
+        
+    }
+}
+
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet obj = new MyHashSet();
+ * obj.Add(key);
+ * obj.Remove(key);
+ * bool param_3 = obj.Contains(key);
+ */
 
 
 
